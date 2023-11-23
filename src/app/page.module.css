@@ -83,6 +83,7 @@
 
   font-weight: 100;
   transition: 0.1s;
+  text-decoration: none;
 
 }
 .link:hover{
@@ -111,5 +112,86 @@
 .sec{
   height: 100vh;
   background-color: #212529;
+  display: flex;
 
+}
+
+.left, .right{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  /* border: 1px solid #F8F9FA; */
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutme{
+  display: flex;
+  /* border: 1px solid red; */
+  width: 90%;
+  height: 90%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5%;
+}
+.aboutmetitle{
+  color: #F8F9FA;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-size: 70px;
+}
+
+.aboutmetext{
+  color: #F8F9FA;
+  font-family: 'Inter', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+
+}
+.aboutmecontact{
+  color: #F8F9FA;
+  font-family: 'Inter', sans-serif;
+  font-weight: 100;
+}
+
+.aboutmecontact > a{
+  font-family: 'Inter', sans-serif;
+  font-weight: 100;
+  text-decoration: underline;
+  color: #F8F9FA;
+  transition: 0.2s;
+}
+
+.aboutmecontact > a:hover{
+  cursor: pointer;
+  text-decoration: none;;
+}
+.me{
+  width: 40%;
+  border-radius: 20px;
+
+}
+.arrowbox{
+  border: 1px solid #F8F9FA;
+  border-radius: 30px;
+  color: #F8F9FA;
+  width: 30%;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  transition: 0.2s;
+
+ 
+}
+
+.arrowbox:hover{
+  cursor: pointer;
+  border-radius: 15px;
+  scale: 1.025;
+}
+
+.arrow{
+  width: 50%;
 }
