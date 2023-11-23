@@ -1,7 +1,7 @@
 "use client"
 import styles from './page.module.css'
 import Image from 'next/image'
-import waves from '../../public/layered-waves.svg'
+import waves from '/nextjs-github-pages/layered-waves.svg'
 
 export default function Page() {
   const scrollToBottom = () => {
@@ -23,7 +23,7 @@ export default function Page() {
               </div>
             </div>
             <div className={styles.links}>
-            <a href='/Yusuf_Resume2324.pdf' target='_' className={styles.link}>Resume</a>
+            <a href='/nextjs-github-pages/Yusuf_Resume2324.pdf' target='_' className={styles.link}>Resume</a>
               <a href='https://www.linkedin.com/in/adnyusuf/' target='_' className={styles.link}>LinkedIn</a>
               <a href='https://github.com/adnanysf' target='_' className={styles.link}>Github</a>
               <div className={styles.link} onClick={scrollToBottom}>About Me</div>
@@ -39,7 +39,7 @@ export default function Page() {
         <div className={styles.sec}>
 
           <div className={styles.left}>
-            <img src="/profpic.jpg" className={styles.me}/>
+            <img src="/nextjs-github-pages/profpic.jpg" className={styles.me}/>
           </div>
           <div className={styles.right}>
             <div className={styles.aboutme}>
@@ -54,7 +54,7 @@ export default function Page() {
               If you'd like to get in touch, feel free to reach out to me at <a href="mailto:asubyusuf@gmail.com">asubyusuf@gmail.com</a> or send me a message on <a href="https://www.linkedin.com/in">LinkedIn!</a>.
               </div>
               <div className={styles.arrowbox} onClick={scrollToTop}>
-                <img src='/arrow-up.png' className={styles.arrow}/> Up, Up, and Away!
+                <img src='/nextjs-github-pages/arrow-up.png' className={styles.arrow}/> Up, Up, and Away!
               </div>
             </div>
             
