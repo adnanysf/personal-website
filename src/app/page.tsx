@@ -46,7 +46,7 @@ export default function Page() {
               </div>
             </div>
           <div className={styles.links}>
-            <a href='/Yusuf_Resume2324.pdf' target='_' className={styles.link}>Resume</a>
+            <a href='/Yusuf_Resume.pdf' target='_' className={styles.link}>Resume</a>
               <a href='https://www.linkedin.com/in/adnyusuf/' target='_' className={styles.link}>LinkedIn</a>
               <a href='https://github.com/adnanysf' target='_' className={styles.link}>Github</a>
               <div className={styles.link} onClick={scrollToPhoto}>About Me</div>
@@ -99,7 +99,7 @@ export default function Page() {
               </div>
             </div>
             <div className={styles.links}>
-            <a href='/Yusuf_Resume2324.pdf' target='_' className={styles.link}>Resume</a>
+            <a href='/Yusuf_Resume.pdf' target='_' className={styles.link}>Resume</a>
               <a href='https://www.linkedin.com/in/adnyusuf/' target='_' className={styles.link}>LinkedIn</a>
               <a href='https://github.com/adnanysf' target='_' className={styles.link}>Github</a>
               <div className={styles.link} onClick={scrollToBottom}>About Me</div>
