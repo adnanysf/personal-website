@@ -1,7 +1,7 @@
 "use client"
 import styles from './page.module.css'
 import Image from 'next/image'
-import waves from '../../public/layered-waves.svg'
+const waves = '/layered-waves.svg';
 import { useMediaQuery } from 'react-responsive';
 import { useEffect, useState, useRef } from 'react';
 
