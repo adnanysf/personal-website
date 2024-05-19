@@ -4,12 +4,15 @@ import Image from 'next/image'
 const waves = '/layered-waves.svg';
 import { useMediaQuery } from 'react-responsive';
 import { useEffect, useState, useRef } from 'react';
+import Link from 'next/link';
+import MoviePopUp from './components/movie';
 
 export default function Page() {
   const photoRef = useRef<HTMLImageElement>(null);
   const [loading, setLoading] = useState(true);
   const isMobile = useMediaQuery({ query: '(max-width: 450px)' });
   const [checkMobile, setcheckMobile] = useState(false);
+  const [showMovie, setShowMovie] = useState(false);
   const scrollToPhoto = () => {
   if(photoRef && photoRef.current){
     const top = photoRef.current.offsetTop - 75;
@@ -28,6 +31,9 @@ export default function Page() {
     setcheckMobile(isMobile);
     setLoading(false);
   },[]);
+
+
+
   if(loading){
     return(
       <div className={styles.loading}></div>
@@ -88,6 +94,9 @@ export default function Page() {
     return (
       
       <div className={styles.appcon}>
+
+        {showMovie && <MoviePopUp setShowMovie={setShowMovie}/> }
+
         <div className={styles.app}>
           <div className={styles.content}>
             <div className={styles.title}>
@@ -103,6 +112,7 @@ export default function Page() {
               <a href='https://www.linkedin.com/in/adnyusuf/' target='_' className={styles.link}>LinkedIn</a>
               <a href='https://github.com/adnanysf' target='_' className={styles.link}>Github</a>
               <div className={styles.link} onClick={scrollToBottom}>About Me</div>
+              <div className={`${styles.link} ${styles.moviebutton}`} onClick={() => setShowMovie(true)}>Movies</div>
 
             </div>
           </div>

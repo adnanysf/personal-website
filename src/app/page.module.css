@@ -100,6 +100,13 @@
     
   }
 
+  .moviebutton{
+    background-color:#F8F9FA ;
+    color: #212529;
+    border: 1px solid #212529;
+    font-weight: 500;
+  }
+
   .foot{
     height: 20%;
     width: 100%;
