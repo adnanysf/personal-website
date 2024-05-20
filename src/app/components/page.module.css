@@ -35,6 +35,7 @@
     align-self: center;
     font-weight: 100;
     transition: 0.3s;
+    font-size: 2vw;
 }
 .title:hover{
     cursor: default;
