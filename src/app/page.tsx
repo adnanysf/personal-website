@@ -6,6 +6,7 @@ import { useMediaQuery } from 'react-responsive';
 import { useEffect, useState, useRef } from 'react';
 import Link from 'next/link';
 import MoviePopUp from './components/movie';
+import movies from './components/movies.json';
 
 export default function Page() {
   const photoRef = useRef<HTMLImageElement>(null);
@@ -31,8 +32,7 @@ export default function Page() {
     setcheckMobile(isMobile);
     setLoading(false);
   },[]);
-
-
+ 
 
   if(loading){
     return(
@@ -95,7 +95,7 @@ export default function Page() {
       
       <div className={styles.appcon}>
 
-        {showMovie && <MoviePopUp setShowMovie={setShowMovie}/> }
+        {showMovie && <MoviePopUp setShowMovie={setShowMovie} data={movies}/> }
 
         <div className={styles.app}>
           <div className={styles.content}>

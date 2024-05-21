@@ -62,9 +62,124 @@
 }
 
 .content{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     width: 95%;
     height: 100%;
 }
+
+.list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid green; */
+    align-items: center;
+    padding-top: 3%;
+
+}
+
+.years{
+    font-size: 1.5vw;
+    border-radius: 40px;
+    border: 1px solid #F8F9FA;
+    color: #F8F9FA;
+    background-color: #212529;
+    width: 85%;
+    height: 8%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    font-family: 'Inter', sans-serif;
+    box-shadow: none;
+
+    font-weight: 100;
+    transition: 0.1s;
+    text-decoration: none;
+
+  }
+  .years:hover{
+    margin: 2%;
+    scale: 1.1;
+    box-shadow: 0px 5px 2px 0px #212529;
+
+    cursor: pointer;
+    
+  }
+
+
+  .movieShow{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    background-color: #F8F9FA;
+    position: fixed;
+    /* top: 25%;
+    left: 50%; */
+    transform: translate(-50%, -25%);
+    border-radius: 1vh;
+    box-shadow: 0px 5px 2px 0px #F8F9FA;
+    padding: 1%;
+    z-index: 1002;
+    }
+
+    .movie{
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 0.65vw;
+    }
+
+    .movies{
+        overflow-y: auto;
+        border: 1px solid #212529;
+        width:95%;
+        border-radius: 1vw;
+        scrollbar-width: thin;
+        scrollbar-color: #212529 #F8F9FA;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .backButt{
+        font-size: 1.5vw;
+        border-radius: 40px;
+        /* border: 1px solid #F8F9FA; */
+        color: #F8F9FA;
+        background-color: #212529;
+        width: 85%;
+        height: 8%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 1%;
+        font-family: 'Inter', sans-serif;
+        box-shadow: none;
+        position: fixed;
+        bottom: 0;
+        font-weight: 100;
+        transition: 0.3s;
+        text-decoration: none;
+    
+      }
+    .backButt:hover{
+        color: #212529;
+        background-color: #F8F9FA;
+        border: 1px solid  #212529;
+        cursor: pointer;
+      }
+
+      .movieTitle{
+        font-size: 1.25vw;
+        font-weight: 500;
+        color: #212529;
+        /* margin: 1%; */
+      }
