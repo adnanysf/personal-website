@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;900&display=swap');
 
-.rP{
+    .rP{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,9 +9,9 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
     position: fixed;
-}
+    }
 
-.app{
+    .app{
     margin: 0;
     display: flex;
     justify-content: center;
@@ -28,21 +28,21 @@
     box-shadow: 0px 5px 2px 0px #212529;
     padding: 1%;
     z-index: 1001;
-}
-.title{
+    }
+    .title{
     font-family: 'Inter', sans-serif;
     color: #F8F9FA;
     align-self: center;
     font-weight: 100;
     transition: 0.3s;
     font-size: 2vw;
-}
-.title:hover{
+    }
+    .title:hover{
     cursor: default;
     scale: 1.1;
-}
+    }
 
-.closeButton{
+    .closeButton{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,22 +54,22 @@
     margin: 2%;
     border: 1px solid #F8F9FA;
     border-radius: 999px;
-}
-.closeButton:hover{
+    }
+    .closeButton:hover{
     cursor: pointer;
     background-color: red;
     color: #212529;
-}
+    }
 
-.content{
+    .content{
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     width: 95%;
     height: 100%;
-}
+    }
 
-.list{
+    .list{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -78,9 +78,9 @@
     align-items: center;
     padding-top: 3%;
 
-}
+    }
 
-.years{
+    .years{
     font-size: 1.5vw;
     border-radius: 40px;
     border: 1px solid #F8F9FA;
@@ -100,18 +100,18 @@
     transition: 0.1s;
     text-decoration: none;
 
-  }
-  .years:hover{
+    }
+    .years:hover{
     margin: 2%;
     scale: 1.1;
     box-shadow: 0px 5px 2px 0px #212529;
 
     cursor: pointer;
-    
-  }
+
+    }
 
 
-  .movieShow{
+    .movieShow{
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -132,59 +132,77 @@
     }
 
     .movie{
-        font-family: 'Inter', sans-serif;
-        font-weight: 100;
-        font-size: 1vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: 1vw;
     }
 
     .movies{
-        overflow-y: auto;
-        border: 1px solid #212529;
-        width:95%;
-        height: 75%;
-        border-radius: 1vw;
-        scrollbar-width: thin;
-        scrollbar-color: #212529 #F8F9FA;
-        padding-top: 3%;
-        padding-bottom: 3%;
-        padding-left: 3%;
-        padding-right: 3%;
+    overflow-y: auto;
+    border: 0.05vw solid #212529;
+    width:95%;
+    height: 75%;
+    border-radius: 1vw;
+    /* scrollbar-width: thin;
+    scrollbar-color: #212529 #F8F9FA; */
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
     }
 
     .backButt{
-        font-size: 1.5vw;
-        border-radius: 40px;
-        /* border: 1px solid #F8F9FA; */
-        color: #F8F9FA;
-        background-color: #212529;
-        width: 85%;
-        height: 8%;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        margin: 1%;
-        font-family: 'Inter', sans-serif;
-        box-shadow: none;
-        position: fixed;
-        bottom: 0;
-        font-weight: 100;
-        transition: 0.3s;
-        text-decoration: none;
-    
-      }
-    .backButt:hover{
-        color: #212529;
-        background-color: #F8F9FA;
-        border: 1px solid  #212529;
-        cursor: pointer;
-      }
+    font-size: 1.5vw;
+    border-radius: 40px;
+    /* border: 1px solid #F8F9FA; */
+    color: #F8F9FA;
+    background-color: #212529;
+    width: 85%;
+    height: 8%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    font-family: 'Inter', sans-serif;
+    box-shadow: none;
+    position: fixed;
+    bottom: 0;
+    font-weight: 100;
+    transition: 0.3s;
+    text-decoration: none;
 
-      .movieTitle{
-        margin-top: 10%;
-        margin-bottom: 5%;
-        font-size: 1.25vw;
-        font-weight: 500;
-        color: #212529;
-        /* margin: 1%; */
-      }
+    }
+    .backButt:hover{
+    color: #212529;
+    background-color: #F8F9FA;
+    border: 1px solid  #212529;
+    cursor: pointer;
+    }
+
+    .movieTitle{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-size: 1.25vw;
+    font-weight: 500;
+    color: #212529;
+    /* margin: 1%; */
+    }
+
+
+    .movies::-webkit-scrollbar {
+    width: 0.5vw;
+    }
+
+    .movies::-webkit-scrollbar-track {
+        border-radius: 1vw; 
+    }
+
+    .movies::-webkit-scrollbar-thumb {
+    background-color: #212529;
+    border-radius: 1vw; 
+    }
+
+    .movies::-webkit-scrollbar-button{
+    display: none;
+    }
