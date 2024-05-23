@@ -52,9 +52,9 @@ export default function MoviePopUp({setShowMovie, data}: any) {
                 <motion.h1 className={styles.movieTitle} variants={childVariants}>My Top Movies in {year}</motion.h1>
                 <motion.ol className={styles.movies} variants={childVariants}>
                     {movies.map((movie: string, index: number) => (
-                        <motion.li key={index} className={styles.movie}>
-                            {movie}
-                        </motion.li>
+                        <motion.div key={index} className={styles.movie}>
+                            {(index+1)+ `. ` + movie}
+                        </motion.div>
                     ))}
                 </motion.ol>
                 <motion.div className={styles.backButt} variants={childVariants} onClick={closeDisplayMovies}>Back</motion.div>
