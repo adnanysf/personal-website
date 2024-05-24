@@ -140,7 +140,7 @@
     .movies{
     overflow-y: auto;
     border: 0.05vw solid #212529;
-    width:95%;
+    width:85%;
     height: 75%;
     border-radius: 1vw;
     /* scrollbar-width: thin;
@@ -152,13 +152,13 @@
     }
 
     .backButt{
-    font-size: 1.5vw;
+    font-size: 1.25vw;
     border-radius: 40px;
     /* border: 1px solid #F8F9FA; */
     color: #F8F9FA;
     background-color: #212529;
-    width: 85%;
-    height: 8%;
+    width: 30%;
+    height: 6%;
     display: flex;
     text-align: center;
     align-items: center;
@@ -167,10 +167,11 @@
     font-family: 'Inter', sans-serif;
     box-shadow: none;
     position: fixed;
-    bottom: 0;
+    bottom: 1%;
     font-weight: 100;
     transition: 0.3s;
     text-decoration: none;
+    margin-top: 2%;
 
     }
     .backButt:hover{
