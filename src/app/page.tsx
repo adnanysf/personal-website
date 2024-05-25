@@ -7,6 +7,8 @@ import { useEffect, useState, useRef } from 'react';
 import Link from 'next/link';
 import MoviePopUp from './components/movie';
 import movies from './components/movies.json';
+import { motion, AnimatePresence } from 'framer-motion';
+
 
 export default function Page() {
   const photoRef = useRef<HTMLImageElement>(null);
@@ -33,6 +35,25 @@ export default function Page() {
     setLoading(false);
   },[]);
  
+
+  const variants = {
+    hidden: { opacity: 0},
+    visible: { opacity: 1, transition: { duration: 0.25, when: "beforeChildren",staggerChildren: 0.5 } },
+    exit: { opacity: 0, transition: { duration: 0.35 } }
+};
+  const linkVariant = {
+    hidden: { opacity: 0},
+    visible: { opacity: 1, transition: { duration: 0.25, when: "beforeChildren",staggerChildren: 0.5 } },
+    exit: { opacity: 0, transition: { duration: 0.35 } }
+  };
+
+  const childVariants = {
+      hidden: { opacity: 0 },
+      visible: { opacity: 1 },
+      exit: { opacity: 0 }
+  };
+
+
 
   if(loading){
     return(
@@ -93,6 +114,7 @@ export default function Page() {
    else{
     return (
       
+      
       <div className={styles.appcon}>
 
         {showMovie && <MoviePopUp setShowMovie={setShowMovie} data={movies}/> }
@@ -100,27 +122,41 @@ export default function Page() {
         <div className={styles.app}>
           <div className={styles.content}>
             <div className={styles.title}>
-              <div className={styles.textContainer}>
-                <span className={styles.intro}><div>Howdy! My name is</div></span>
-                <span className={styles.name}><div>Adnan Yusuf</div></span>
-                <span className={styles.introtwo}><div> and I'm a </div></span>
-                <span className={styles.pos}><div>Software Engineer</div></span>
-              </div>
+              <motion.div className={styles.textContainer}
+                variants={variants}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+              >
+
+                <motion.span variants={childVariants} className={styles.intro}><div>Howdy! My name is</div></ motion.span>
+                <motion.span variants={childVariants} className={styles.name}><div>Adnan Yusuf</div></motion.span>
+                <motion.span variants={childVariants} className={styles.introtwo}><div> and I'm a </div></motion.span>
+                <motion.span variants={childVariants} className={styles.pos}><div>Software Engineer</div></motion.span>
+              </motion.div>
             </div>
-            <div className={styles.links}>
-            <a href='/Yusuf_Resume.pdf' target='_' className={styles.link}>Resume</a>
-              <a href='https://www.linkedin.com/in/adnyusuf/' target='_' className={styles.link}>LinkedIn</a>
-              <a href='https://github.com/adnanysf' target='_' className={styles.link}>Github</a>
-              <div className={styles.link} onClick={scrollToBottom}>About Me</div>
-              <div className={`${styles.link} ${styles.moviebutton}`} onClick={() => setShowMovie(true)}>Movies</div>
+            <motion.div className={styles.links}
+            variants={linkVariant}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            >
+            <motion.a variants={childVariants} href='/Yusuf_Resume.pdf' target='_' className={styles.link}>Resume</motion.a>
+              <motion.a variants={childVariants} href='https://www.linkedin.com/in/adnyusuf/' target='_' className={styles.link}>LinkedIn</motion.a>
+              <motion.a variants={childVariants} href='https://github.com/adnanysf' target='_' className={styles.link}>Github</motion.a>
+              <motion.div variants={childVariants} className={styles.link} onClick={scrollToBottom}>About Me</motion.div>
+              <motion.div variants={childVariants} className={`${styles.link} ${styles.moviebutton}`} onClick={() => setShowMovie(true)}>Movies</motion.div>
 
-            </div>
+            </motion.div>
           </div>
-            <div className={styles.foot}>
-             <Image src={waves} alt="waves" className={styles.waves} layout="fill" objectFit="cover"/> 
-
-
-          </div>
+            <motion.div className={styles.foot}
+            // variants={variants}
+            // initial="hidden"
+            // animate="visible"
+            // exit="exit"
+            >
+             <Image src={waves} alt="waves" className={styles.waves} layout="fill" objectFit="cover"/>
+          </motion.div>
         </div>
         <div className={styles.sec}>
 

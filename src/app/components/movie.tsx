@@ -63,7 +63,12 @@ export default function MoviePopUp({setShowMovie, data}: any) {
     }
     return (
         <>
-            <div className={styles.rP} onClick={() => setShowMovie(false)}></div>
+            <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            className={styles.rP} onClick={() => setShowMovie(false)}></motion.div>
             <motion.div 
             initial={{ y: "100%" }} 
             animate={{ y: "0%" }}
