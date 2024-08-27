@@ -171,7 +171,7 @@ export default function Page() {
               and participating in hackathons. 
                 
                Currently, I am a Director at TAMUhack, an organization that manages two hackathons at Texas A&M. 
-               This Summer, I am joining JP Morgan Chase & Co. as a Software Engineering Intern. </div>
+               During the Summer of 2024, I joined JPMorganChase as a Software Engineer Intern. </div>
                <div className={styles.aboutmecontact}>
               If you'd like to get in touch, feel free to reach out to me at <a href="mailto:asubyusuf@gmail.com">asubyusuf@gmail.com</a> or send me a message on <a  href='https://www.linkedin.com/in/adnyusuf/' target='_' >LinkedIn!</a>.
               </div>
