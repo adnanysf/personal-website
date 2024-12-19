@@ -74,6 +74,9 @@
     
 
   }
+  .intro > *, .introtwo > * {
+    font-weight: 400;
+  }
 
   .link{
     font-size: 2vw;
