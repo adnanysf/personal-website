@@ -145,7 +145,7 @@ export default function Page() {
               <motion.a variants={childVariants} href='https://www.linkedin.com/in/adnyusuf/' target='_' className={styles.link}>LinkedIn</motion.a>
               <motion.a variants={childVariants} href='https://github.com/adnanysf' target='_' className={styles.link}>Github</motion.a>
               <motion.div variants={childVariants} className={styles.link} onClick={scrollToBottom}>About Me</motion.div>
-              <motion.div variants={childVariants} className={`${styles.link} ${styles.moviebutton}`} onClick={() => setShowMovie(true)}>Movies</motion.div>
+              <motion.div variants={childVariants} className={`${styles.movielink} ${styles.moviebutton}`} onClick={() => setShowMovie(true)}>Movies</motion.div>
 
             </motion.div>
           </div>
