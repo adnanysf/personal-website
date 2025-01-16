@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;900&display=swap');
 
+
+
 .loading{
   background-color: #F8F9FA;
 }
@@ -10,7 +12,9 @@
     height: 200vh;
     width: 100vw;
   }
-
+  .link, .aboutmetext, .aboutmecontact, .aboutmecontact > a {
+    font-weight: 100 !important;
+  }
   .app{
     margin: 0;
     display: flex;
@@ -69,6 +73,9 @@
     cursor: default;
     
 
+  }
+  .intro > *, .introtwo > * {
+    font-weight: 400;
   }
 
   .link{
