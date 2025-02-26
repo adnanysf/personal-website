@@ -1,14 +1,15 @@
 [
     {
+        "year": "2024",
+        "movies": ["Monkey Man, Dune: Part Two, Sonic The Hedgehog 3, LongLegs, Wicked, Hit-man, Kingdom of The Planet of The Apes, A Quiet Place: Day One, The Fall Guy, Challengers, The Miseries of Ungentlemanly Warfare, Don't Move, Anyone but you, The Last Stop in Yuma County"]
+    },
+    {
         "year": "2023",
         "movies": ["Spider-Man: Across the Spider-Verse, Tetris, Guardians of the Galaxy Vol 3, Oppenheimer, Godzilla Minus One, Hunger Games: Ballad of Song Birds and Snakes, Teenage Mutant Ninja Turtles: Mutant Mayhem, Wonka, Saltburn, Leave the world behind, Dungeons and Dragons: Honor Among Thieves, A Haunting in Venice, Blue Beetle, Barbie, The Family Plan, Super Mario Bros, Cocaine Bear, Missing, The Flash, Five Nights at Freddy’s, Shazam! Fury of the Gods, Antman and the Wasp Quantumania, The Little Mermaid"]
     },
     {
         "year": "2022",
         "movies": ["Everything Everywhere All At Once, The Batman, Glass Onion: A Knives Out Mystery, The Menu, Avatar: Way of Water, Puss in Boots: The Last Wish, Bullet Train, Bodies Bodies Bodies, Black Panther Wakanda Forever, The Unbearable Weight of Massive Talent, Vengeance, Dr. Strange Multiverse of Madness, DC’s League of Super Pets, The Lost City, Black Adam, Sonic the Hedgehog 2, The Adam Project, Lightyear, Turning Red, Uncharted, Chip n’ Dale: Rescue Rangers, Thor Love and Thunder, Nope, Don’t Worry Darling, Umma, The Bad Guys, Jurassic World Dominion, Morbius"]
-    },
-    {
-        "year": "2024",
-        "movies": ["Monkey Man, Dune: Part Two, Sonic The Hedgehog 3, LongLegs, Wicked, Hit-man, Kingdom of The Planet of The Apes, A Quiet Place: Day One, The Fall Guy, Challengers, The Miseries of Ungentlemanly Warfare, Don't Move, Anyone but you, The Last Stop in Yuma County"]
     }
+
 ]
